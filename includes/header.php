@@ -7,6 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prizma Ingeniería | Construcción y Concretos</title>
+  <link rel="icon" href="assets/logos/logo-prizma-ingenieria.png" />
   <meta name="description" content="Prizma Ingeniería: ingeniería, construcción y concretos en Baja California Sur." />
   <link rel="stylesheet" href="css/styles.css" />
 

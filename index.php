@@ -32,63 +32,53 @@
     </div>
   </section>
 
-  <section id="servicios" class="section" style="background:var(--pzm-light)">
-    <div class="container">
-      <div class="row align-items-end mb-4">
-        <div class="col-lg-8" data-aos="fade-right">
-          <h2 class="section-title">Soluciones integrales</h2>
-          <p class="section-sub">Tres líneas que se complementan para entregar obras funcionales, seguras y durables.</p>
-        </div>
-      </div>
+  <section class="soluciones-integrales">
+  <div class="container">
+    <h2>Soluciones integrales</h2>
+    <p class="subtitulo">Tres líneas que se complementan para entregar obras funcionales, seguras y durables.</p>
 
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-          <article class="card service-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="service-icon"><i class="bi bi-bezier"></i></div>
-              <h3 class="h5 mb-0">Ingeniería</h3>
-            </div>
-            <p>Diseño y revisión estructural, cálculo de cimentaciones, memoria de obra y supervisión técnica. Alineamos normativa y viabilidad constructiva desde la planeación para evitar retrabajos en campo.</p>
-            <ul class="mb-0 small text-body-secondary">
-              <li>Estudios de sitio y trazo</li>
-              <li>Planos ejecutivos y cuantificación</li>
-              <li>Supervisión y control de calidad</li>
-            </ul>
-          </article>
-        </div>
+    <div class="cards-container">
+      
+      <article class="service-card" id="card-ingenieria">
+        <div class="card-icon">
+            <img src="assets/logos/logo-prizma-ingenieria.png" alt="Icono de Ingeniería">
+          </div>
+        <h3>Ingeniería</h3>
+        <p>Diseño y revisión estructural, cálculo de cimentaciones, memoria de obra y supervisión técnica. Alineamos normativa y viabilidad constructiva desde la planeación para evitar retrabajos en campo.</p>
+        <ul>
+          <li>Estudios de sitio y trazo</li>
+          <li>Planos ejecutivos y cuantificación</li>
+          <li>Supervisión y control de calidad</li>
+        </ul>
+      </article>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <article class="card service-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="service-icon"><i class="bi bi-truck"></i></div>
-              <h3 class="h5 mb-0">Concretos</h3>
-            </div>
-            <p>Suministro y bombeo de concreto preparado y mezclas especiales según resistencia y asentamiento requeridos. Coordinación de tiempos de vertido, vibrado y curado para desempeño óptimo.</p>
-            <ul class="mb-0 small text-body-secondary">
-              <li>Concreto premezclado y lanzado</li>
-              <li>Asesoría de dosificación</li>
-              <li>Laboratorio y probetas (red de aliados)</li>
-            </ul>
-          </article>
-        </div>
+      <article class="service-card" id="card-concretos">
+        <div class="card-icon">
+            <img src="assets/logos/prizma-concretos.png" alt="Icono de Concretos">
+          </div>
+        <h3>Concretos</h3>
+        <p>Suministro y bombeo de concreto preparado y mezclas especiales según resistencia y asentamiento requeridos. Coordinación de tiempos de vertido, vibrado y curado para desempeño óptimo.</p>
+        <ul>
+          <li>Concreto premezclado y lanzado</li>
+          <li>Asesoría de dosificación</li>
+          <li>Laboratorio y probetas (red de aliados)</li>
+        </ul>
+      </article>
 
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <article class="card service-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="service-icon"><i class="bi bi-building"></i></div>
-              <h3 class="h5 mb-0">Construcción</h3>
-            </div>
-            <p>Urbanización y obra civil: movimiento de tierras, terracerías, drenaje, pavimentación y obras exteriores. Gestión integral con control de tiempo, costo y seguridad en sitio.</p>
-            <ul class="mb-0 small text-body-secondary">
-              <li>Fraccionamientos y vialidades</li>
-              <li>Redes hidráulicas y sanitarias</li>
-              <li>Banquetas, guarniciones y señalética</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
+      <article class="service-card" id="card-construccion">
+        <div class="card-icon">
+            <img src="assets/logos/prizma-agregados.png" alt="Icono de Construcción">
+          </div>
+        <h3>Construcción</h3>
+        <p>Urbanización y obra civil: movimiento de tierras, terracerías, drenaje, pavimentación y obras exteriores. Gestión integral con control de tiempo, costo y seguridad en sitio.</p>
+        <ul>
+          <li>Fraccionamientos y vialidades</li>
+          <li>Redes hidráulicas y sanitarias</li>
+          <li>Banquetas, guarniciones y señalética</li>
+        </ul>
+      </article>
+
+    </div> </div> </section>
 
   <section id="proyectos" class="section">
     <div class="container">
@@ -104,6 +94,8 @@
           </div>
         </div>
       </div>
+
+
 
       <div class="swiper project-slider" data-aos="fade-up">
         <div class="swiper-wrapper">

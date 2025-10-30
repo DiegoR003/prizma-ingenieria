@@ -291,3 +291,143 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   transform: translateY(0);
 }
 /* Tu .btn-accent ya lo estiliza, así que no se necesita más */
+
+/* --- Estilos para la Sección de Soluciones --- */
+
+.soluciones-integrales {
+  padding: 60px 0; /* Espacio arriba y abajo */
+  background-color: #f8f9fa; /* Un fondo gris muy claro, o déjalo en #fff si prefieres */
+}
+
+/* Un contenedor para centrar el contenido */
+.soluciones-integrales .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.soluciones-integrales h2 {
+  font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #212529; /* Negro/Gris oscuro */
+  margin-bottom: 15px;
+}
+
+.soluciones-integrales .subtitulo {
+  font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
+  font-size: 1.1rem;
+  color: #6c757d; /* Gris secundario */
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: grid;
+  /* Crea 3 columnas de tamaño igual */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; /* Espacio entre las tarjetas */
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef; /* Borde muy sutil */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 35px 30px; /* Espacio interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon img {
+  width: 80px;
+  height: 70px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  
+  /* Estilo para los íconos (si usas Font Awesome) */
+  font-size: 1.8rem; /* Tamaño del ícono */
+  color: #F59E0B; /* Color del ícono (amarillo oscuro) */
+}
+
+/* --- AÑADIR AL FINAL DEL CSS --- */
+/* Aquí asignamos las imágenes de fondo */
+
+#card-ingenieria {
+  background-image: url('assets');
+}
+
+#card-concretos {
+  background-image: url('assets');
+}
+
+#card-construccion {
+  background-image: url('assets');
+}
+
+.service-card h3 {
+  font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.service-card li {
+  font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Viñeta (bullet) personalizada como en la imagen */
+.service-card li::before {
+  content: '•';
+  color: #F59E0B; /* Color de la viñeta (amarillo) */
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  line-height: 0.9; /* Ajuste vertical */
+}
+
+
+/* --- Media Query para hacerlo Responsivo --- */
+@media (max-width: 992px) {
+  /* En tablets, pasa a 2 columnas */
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* En móviles, pasa a 1 columna */
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .soluciones-integrales h2 {
+    font-size: 2.2rem;
+  }
+}

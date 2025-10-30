@@ -7,7 +7,7 @@
         
         <div class="col-lg-3 col-md-6">
           <a class="navbar-brand d-flex align-items-center gap-2 mb-3" href="#home">
-            <img src="assets/logos/logo-prizma-ingenieria.png" class="brand-mark" alt="Prizma"> 
+            <img src="assets/logos/logo-prizma-ingenieria.png" class="brand-mark" style="height: 250px; width: 250px;" alt="Prizma"> 
            
           </a>
           <ul class="list-unstyled footer-contact-info">
@@ -73,13 +73,6 @@
   <a href="#home" id="btn-back-to-top" class="btn btn-accent" aria-label="Volver arriba">
     <i class="bi bi-arrow-up"></i>
   </a>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
-  <script src="js/app.js"></script>
 
 </body>
 </html>
