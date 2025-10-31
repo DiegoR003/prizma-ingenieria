@@ -2,35 +2,48 @@
 
 
   <section id="metricas" class="section-metrics py-5">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-6 col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="0">
-          <div class="metric">
-            <h3 class="display-4 metric-number">10+</h3>
-            <p class="metric-label">Años de experiencia</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-          <div class="metric">
-            <h3 class="display-4 metric-number">100+</h3>
-            <p class="metric-label">Obras de urbanización</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="metric">
-            <h3 class="display-4 metric-number">50k+</h3>
-            <p class="metric-label">m³ de concreto</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="metric">
-            <h3 class="display-4 metric-number">100%</h3>
-            <p class="metric-label">Calidad y seguridad</p>
-          </div>
+  <div class="container">
+    <div class="row text-center">
+      
+      <div class="col-6 col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="0">
+        <div class="metric">
+          <h3 class="display-4 metric-number">
+            <span class="contador" data-target="10">0</span>+
+          </h3>
+          <p class="metric-label">Años de experiencia</p>
         </div>
       </div>
+      
+      <div class="col-6 col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="metric">
+          <h3 class="display-4 metric-number">
+            <span class="contador" data-target="100">0</span>+
+          </h3>
+          <p class="metric-label">Obras de urbanización</p>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="metric">
+          <h3 class="display-4 metric-number">
+            <span class="contador" data-target="50">0</span>k+
+          </h3>
+          <p class="metric-label">m³ de concreto</p>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="metric">
+          <h3 class="display-4 metric-number">
+            <span class="contador" data-target="100">0</span>%
+          </h3>
+          <p class="metric-label">Calidad y seguridad</p>
+        </div>
+      </div>
+      
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="soluciones-integrales">
   <div class="container">
@@ -66,7 +79,7 @@
       </article>
 
       <article class="service-card" id="card-construccion">
-        <div class="card-icon">
+        <div class="card-icon" style="width: 80px; height: 80px;">
             <img src="assets/logos/prizma-agregados.png" alt="Icono de Construcción">
           </div>
         <h3>Construcción</h3>

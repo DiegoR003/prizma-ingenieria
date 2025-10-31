@@ -340,7 +340,8 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; /* <-- ¡AÑADE ESTA LÍNEA! */
-  
+  overflow: hidden;
+  position: relative;
 }
 
 
@@ -350,7 +351,21 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
 }
 
 
+/* Capa oscura encima del fondo */
+.service-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.55);   /* ajusta oscuridad aquí */
+  z-index:1;
+}
 
+/* El contenido por encima de la capa */
+.service-card > *{
+  position: relative;
+  z-index:2;
+
+}
 
 
 .card-icon img {
@@ -365,7 +380,7 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   /* Estilo para los íconos (si usas Font Awesome) */
   font-size: 1.8rem; /* Tamaño del ícono */
   color: #F59E0B; /* Color del ícono (amarillo oscuro) */
-  
+  mix-blend-mode: multiply;
 }
 
 /* --- AÑADIR AL FINAL DEL CSS --- */
@@ -378,11 +393,11 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
 }
 
 #card-concretos {
-  background-image: url('assets');
+  background-image: url('../assets/img/concretos/concreto2.jpg');
 }
 
 #card-construccion {
-  background-image: url('assets');
+  background-image: url('../assets/img/agregados/agregados.png');
 }
 
 .service-card h3 {
