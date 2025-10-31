@@ -77,13 +77,13 @@ section.section{padding:80px 0}
 .section-title{font-weight:800; letter-spacing:.3px; color: var(--pzm-dark);}
 .section-sub{color:var(--pzm-muted)}
 
-/* Tarjetas de servicio */
+/* Tarjetas de servicio
 .service-card{
   background:#fff; border:0; border-radius:var(--radius); box-shadow:var(--shadow); height:100%;
   transition:transform .25s ease, box-shadow .25s ease;
 }
 .service-card:hover{transform:translateY(-6px); box-shadow:0 18px 42px rgba(15,23,42,.18)}
-.service-icon{width:56px; height:56px; border-radius:16px; display:grid; place-items:center; background:rgba(248,180,0,.15); color:var(--pzm-accent); font-size: 1.75rem;}
+.service-icon{width:56px; height:56px; border-radius:16px; display:grid; place-items:center; background:rgba(248,180,0,.15); color:var(--pzm-accent); font-size: 1.75rem;}  */
 
 /* ==================
    Grid de proyectos (Ahora Swiper)
@@ -330,17 +330,28 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
 
 .service-card {
   background-color: #ffffff;
-  border: 1px solid #e9ecef; /* Borde muy sutil */
-  border-radius: 12px; /* Bordes redondeados */
+  color: #ffffff;
   padding: 35px 30px; /* Espacio interno */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 380px;
+  height: 500px;
+  /* Ajustes de imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* <-- ¡AÑADE ESTA LÍNEA! */
+  
 }
+
 
 .service-card:hover {
   transform: translateY(-5px); /* Efecto al pasar el mouse */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
+
+
+
 
 .card-icon img {
   width: 80px;
@@ -354,13 +365,16 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   /* Estilo para los íconos (si usas Font Awesome) */
   font-size: 1.8rem; /* Tamaño del ícono */
   color: #F59E0B; /* Color del ícono (amarillo oscuro) */
+  
 }
 
 /* --- AÑADIR AL FINAL DEL CSS --- */
 /* Aquí asignamos las imágenes de fondo */
 
 #card-ingenieria {
-  background-image: url('assets');
+  background-image: url('../assets/img/ingenieria/plano1.jpg');
+  background-color: rgba(0, 0, 0, 0.8);
+ z-index: 2;
 }
 
 #card-concretos {
@@ -375,7 +389,7 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
   font-size: 1.5rem;
   font-weight: 600;
-  color: #343a40;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -383,7 +397,7 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
   font-size: 1rem;
   line-height: 1.6;
-  color: #6c757d;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -396,7 +410,7 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
 .service-card li {
   font-family: 'Arial', sans-serif; /* Cambia a tu fuente */
   font-size: 0.95rem;
-  color: #6c757d;
+  color: #ffffff;
   margin-bottom: 10px;
   display: flex;
   align-items: flex-start;
@@ -410,6 +424,7 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   font-size: 1.2rem;
   margin-right: 10px;
   line-height: 0.9; /* Ajuste vertical */
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 
@@ -418,6 +433,10 @@ footer{background:#0f172a; color:#c7cbd4; padding-top: 5rem; padding-bottom: 4re
   /* En tablets, pasa a 2 columnas */
   .cards-container {
     grid-template-columns: 1fr 1fr;
+  }
+  .service-card{
+    width: 200px;
+    height: 400px;
   }
 }
 
